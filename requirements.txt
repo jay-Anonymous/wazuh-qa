@@ -13,9 +13,9 @@ kiwisolver>=1.0.1; platform_system == "Linux" or platform_system == "Darwin" or 
 lockfile==0.12.2
 matplotlib>=3.3.4; platform_system == "Linux" or platform_system == "Darwin" or platform_system=='Windows'
 netifaces==0.10.9; platform_system == "Linux" or platform_system == "Darwin"
-numpy>=1.18.1
+numpy>=1.22.2
 pandas>=1.1.5
-pillow>=6.2.0; platform_system == "Linux" or platform_system == "Darwin" or platform_system=='Windows'
+pillow>=10.3.0; platform_system == "Linux" or platform_system == "Darwin" or platform_system=='Windows'
 psutil>=5.6.6
 py~=1.10.0; platform_system != "Windows" or python_version <= "3.10"
 py==1.11.0; platform_system == "Windows" and python_version >= "3.11"
@@ -28,12 +28,12 @@ pyyaml==6.0.1
 requests>=2.23.0
 scipy>=1.0; platform_system == "Linux" or platform_system == "Darwin" or platform_system=='Windows'
 seaborn>=0.11.1; platform_system == "Linux" or platform_system == "Darwin" or platform_system=='Windows'
-setuptools~=56.0.0
+setuptools~=65.5.1
 testinfra==5.0.0
 jq==1.1.2 ; (platform_system == "Linux" or platform_system == "Darwin") and python_version <= "3.9"
 jq==1.2.2 ; (platform_system == "Linux" or platform_system == "Darwin") and python_version == "3.10"
 jq==1.6.0 ; (platform_system == "Linux" or platform_system == "Darwin") and python_version >= "3.11"
-cryptography==3.3.2; platform_system == "Linux" or platform_system == "Darwin" or platform_system=='Windows'
+cryptography==42.0.2; platform_system == "Linux" or platform_system == "Darwin" or platform_system=='Windows'
 urllib3>=1.26.5,<2
 numpydoc>=1.1.0
 ansible-runner>=2.0.1 ; platform_system == "Linux"
@@ -42,7 +42,7 @@ python-vagrant>=0.5.15 ; platform_system == "Linux" or platform_system=='Windows
 ansible>=3.1.0 ; platform_system == "Linux"
 elasticsearch>=7.14.1 ; platform_system == "Linux" or platform_system=='Windows'
 safety==1.10.3
-bandit==1.7.0
+bandit==1.7.7
 git-repo==1.10.3
 pywinrm>=0.4.2 ; platform_system == "Linux" or platform_system=='Windows'
 wmi>=1.5.1; platform_system=='Windows'
@@ -53,3 +53,4 @@ prettytable; platform_system == "Linux"
 mysql-connector-python==8.0.32; platform_system == 'Linux' and python_version >= '3.7'
 protobuf>=3.11.0,<=3.20.3; platform_system == 'Linux' and python_version >= '3.7'
 boto3>=1.17.85; platform_system == 'Linux'
+fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
