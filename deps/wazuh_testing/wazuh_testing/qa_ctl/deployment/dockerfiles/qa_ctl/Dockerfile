@@ -1,4 +1,4 @@
-From ubuntu:focal
+From ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV RUNNING_ON_DOCKER_CONTAINER=true
