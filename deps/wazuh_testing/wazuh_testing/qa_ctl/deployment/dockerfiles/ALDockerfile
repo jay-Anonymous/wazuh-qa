@@ -1,4 +1,4 @@
-FROM amazonlinux:2.0.20200602.0
+FROM amazonlinux:2.0.20250414.0
 
 RUN yum update -y && \
     yum install -y \
